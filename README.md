@@ -1,2 +1,3 @@
 # PythonTests
-HowTo testing Python
+
+`python3 tests/tests.py`
