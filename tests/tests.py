@@ -2,7 +2,7 @@ import unittest
 
 class TestStringMethods(unittest.TestCase):
 
-    def test_verify(self):
+    def testVerify(self):
         print('testing')
         self.assertEqual('foo'.upper(), 'FOO')
 
