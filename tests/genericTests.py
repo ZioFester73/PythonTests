@@ -17,6 +17,7 @@ class genericFixture(unittest.TestCase):
         self.assertNotEqual('foo'.upper(), 'foo')
 
 if __name__ == '__main__':
+    print('internal tests main')
     unittest.main()
 
 
