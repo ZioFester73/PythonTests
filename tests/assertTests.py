@@ -15,8 +15,10 @@ class assertFixture(unittest.TestCase):
       self.assertNotEqual(1, '1')
 
     def testRaiseException(self):
+        funct = lambda x: 1/x
+
         with self.assertRaises(Exception):
-            x = 1/0
+            funct(0)
 
 if __name__ == '__main__':
     unittest.main()
