@@ -8,8 +8,12 @@ class runningFixtures(unittest.TestCase):
   def tearDown(self):
     pass
 
-  def testVerify(self):
-    self.assertEqual(1,1)
+  def testRunningFromPy(self):
+    import subprocess
+
+    stdout = subprocess.check_output('python code/genericModule.py', shell=True)
+
+    self.assertEqual(stdout, b'module running\n')
 
 if __name__ == '__main__':
   unittest.main()
