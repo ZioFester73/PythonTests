@@ -1,2 +1,2 @@
 language = "python3"
-run = "python3 tests/genericTests.py -v"
+run = "python -m unittest discover -s tests -p '*Tests.py' -v"

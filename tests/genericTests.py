@@ -3,21 +3,18 @@ import unittest
 class genericFixture(unittest.TestCase):
 
     def setUp(self):
-      print('setUp')
+      pass
 
     def tearDown(self):
-      print('tearDown')
+      pass
 
     def testFoo(self):
-        print('testing')
-        self.assertEqual('foo'.upper(), 'FOO')
+      self.assertEqual('foo'.upper(), 'FOO')
 
     def testBar(self):
-        print('testing')
-        self.assertNotEqual('foo'.upper(), 'foo')
+      self.assertNotEqual('foo'.upper(), 'foo')
 
 if __name__ == '__main__':
-    print('internal tests main')
     unittest.main()
 
 
